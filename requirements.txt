@@ -1,0 +1,60 @@
+# =============================================================================
+# SaaS UX Analyzer - Requirements
+# Python 3.10+ required
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Computer Vision & Machine Learning
+# -----------------------------------------------------------------------------
+opencv-python>=4.8.0          # Video processing, frame extraction
+numpy>=1.24.0                 # Numerical operations, array handling
+ultralytics>=8.0.0            # YOLOv8 for UI element detection
+pillow>=10.0.0                # Image processing utilities
+
+# -----------------------------------------------------------------------------
+# API Framework
+# -----------------------------------------------------------------------------
+fastapi>=0.104.0              # REST API framework
+uvicorn[standard]>=0.24.0     # ASGI server for FastAPI
+python-multipart>=0.0.6       # File upload support for FastAPI
+starlette>=0.27.0             # ASGI toolkit (FastAPI dependency)
+
+# -----------------------------------------------------------------------------
+# Data Validation & Serialization
+# -----------------------------------------------------------------------------
+pydantic>=2.5.0               # Data validation and settings
+
+# -----------------------------------------------------------------------------
+# Dashboard & Visualization
+# -----------------------------------------------------------------------------
+streamlit>=1.28.0             # Interactive dashboard
+plotly>=5.18.0                # Interactive charts and heatmaps
+pandas>=2.0.0                 # Data manipulation and analysis
+
+# -----------------------------------------------------------------------------
+# Cloud & Storage (AWS)
+# -----------------------------------------------------------------------------
+boto3>=1.33.0                 # AWS SDK for S3 integration
+botocore>=1.33.0              # AWS core library
+
+# -----------------------------------------------------------------------------
+# HTTP & Networking
+# -----------------------------------------------------------------------------
+requests>=2.31.0              # HTTP client for API calls
+httpx>=0.25.0                 # Async HTTP client (optional)
+
+# -----------------------------------------------------------------------------
+# Development & Testing
+# -----------------------------------------------------------------------------
+pytest>=7.4.0                 # Testing framework
+pytest-asyncio>=0.21.0        # Async test support
+black>=23.0.0                 # Code formatter
+isort>=5.12.0                 # Import sorter
+mypy>=1.7.0                   # Static type checker
+flake8>=6.1.0                 # Linting
+
+# -----------------------------------------------------------------------------
+# Optional: Production Deployment
+# -----------------------------------------------------------------------------
+gunicorn>=21.0.0              # Production WSGI server
+python-dotenv>=1.0.0          # Environment variable management

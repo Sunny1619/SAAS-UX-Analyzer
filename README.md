@@ -16,6 +16,20 @@ SaaS companies need to understand where users struggle in their products. Manual
 - **Generates actionable insights** with timestamps and descriptions
 - **Scales to handle multiple videos** through a clean API design
 
+## 📸 Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](screenshots/1.png)
+*Main dashboard showing friction score, issue distribution, and key metrics*
+
+### Analysis Results
+![Analysis Results](screenshots/2.png)
+*Detailed analysis with issue timeline and severity breakdown*
+
+### Cursor Heatmap
+![Cursor Heatmap](screenshots/3.png)
+*Cursor activity heatmap visualization showing user interaction patterns*
+
 ## 🏗️ Architecture
 
 ```
@@ -109,7 +123,14 @@ saas-ux-analyzer/
 ├── demo/
 │   ├── __init__.py
 │   └── generator.py           # Demo data generation
+├── screenshots/               # Application screenshots
+│   ├── 1.png
+│   ├── 2.png
+│   └── 3.png
 ├── requirements.txt
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
 └── README.md
 ```
 
@@ -147,7 +168,7 @@ API will be available at: http://localhost:8000
 
 ```bash
 # In a new terminal
-streamlit run dashboard/app.py
+python -m streamlit run dashboard/app.py
 ```
 
 Dashboard will be available at: http://localhost:8501
